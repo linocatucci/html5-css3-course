@@ -1,3 +1,5 @@
+/* first setup of a responsive project */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +10,37 @@ html {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+
+/* first setup of a responsive project */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+/* door de normilize file h1 heeft een marge, dit wordt nu weggehhald */
+
+h1 {
+    margin: 0;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1024px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
