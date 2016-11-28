@@ -28,13 +28,22 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    /* viewport is 100% van het scherm */
 }
 
 
-/* door de normilize file h1 heeft een marge, dit wordt nu weggehhald */
+/* door de normilize file heeft h1 heeft een margin top gekregen, dit wordt nu weggehaald */
 
 h1 {
-    margin: 0;
+    margin-top: 0;
+    color: #fff;
+    /* dit is 2x de fontsize van de global fontsize in html block declaratie 200% = 40px */
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    margin-bottom: 20px;
 }
 
 .hero-text-box {
@@ -43,4 +52,45 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* hierdoor wordt 50% van de height en de width naar links en naar boven verplaatst*/
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22;
+    border: solid 1px #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: solid 1px #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: solid 1px #cf6d17;
+    color: #fff;
 }
