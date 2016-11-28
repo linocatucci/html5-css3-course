@@ -1,4 +1,13 @@
+/*---------------------------------------------------------------------------------*/
+
+
 /* first setup of a responsive project */
+
+
+/* no marging and padding on any element and use the border box */
+
+
+/*---------------------------------------------------------------------------------*/
 
 * {
     margin: 0;
@@ -15,13 +24,23 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+
+/*---------------------------------------------------------------------------------
+
+reusable components
+/*---------------------------------------------------------------------------------*/
+
 .row {
     max-width: 1024px;
     margin: 0 auto;
 }
 
 
-/* first setup of a responsive project */
+/*---------------------------------------------------------------------------------
+HEADER /* first setup of a responsive project */
+
+
+/*---------------------------------------------------------------------------------*/
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
@@ -31,8 +50,44 @@ header {
     /* viewport is 100% van het scherm */
 }
 
+.hero-text-box {
+    position: absolute;
+    width: 1024px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* hierdoor wordt 50% van de height en de width naar links en naar boven verplaatst*/
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    /* to get them side by side and with margin */
+    margin-left: 40px;
+}
+
+.main-nav li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
 
 /* door de normilize file heeft h1 heeft een margin top gekregen, dit wordt nu weggehaald */
+
+
+/* HEADINGS */
 
 h1 {
     margin-top: 0;
@@ -46,14 +101,8 @@ h1 {
     margin-bottom: 20px;
 }
 
-.hero-text-box {
-    position: absolute;
-    width: 1024px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* hierdoor wordt 50% van de height en de width naar links en naar boven verplaatst*/
-}
+
+/* ---------- BUTTONS------------ */
 
 .btn:link,
 .btn:visited {
@@ -62,7 +111,7 @@ h1 {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
 }
 
 .btn-full:link,
