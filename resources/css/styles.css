@@ -109,12 +109,47 @@ header {
 /* meals showcase  /*
 /*---------------------------------------------------------------------------------*/
 
+.section-meals {
+    padding: 0px;
+}
+
 .meals-showcase {
     list-style: none;
     width: 100%;
 }
 
-.meals-showcase li {}
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+    /* 4 elementen met 25% wordt 100%  */
+}
+
+.meal-photo {
+    /* 100% breedte van zijn parent en dat is de li van meals-showcase */
+    width: 100%;
+    /* normilize file can override this thats why we set it here explicit */
+    margin: 0;
+    /* overflow hidden alles wat buiten de container valt, in dit geval de foto is hidden */
+    overflow: hidden;
+    /* black container */
+    background: #000;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    /* scale back/ zoom out naar 100% */
+    transform: scale(1.03);
+    /* opacity is 100% */
+    opacity: 1;
+}
 
 
 /*
@@ -122,6 +157,15 @@ header {
 door de normilize file heeft h1 heeft een margin top gekregen, dit wordt nu weggehaald
 h1 {margin-top: 0;}
 */
+
+
+/*---------------------------------------------------------------------------------
+/* section features  /*
+/*---------------------------------------------------------------------------------*/
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
 
 
 /* HEADINGS */
@@ -188,8 +232,8 @@ h2:after {
 
 .icon-big {
     font-size: 350%;
-    display: block;
     /* forces a line break */
+    display: block;
     color: #e67e22;
     margin-bottom: 10px;
     text-align: center;
