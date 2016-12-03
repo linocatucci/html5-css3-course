@@ -216,6 +216,11 @@ header {
     margin-right: 10px;
 }
 
+.btn-app:link,
+.bnt-app:visited {
+    border: 0;
+}
+
 
 /*---------------------------------------------------------------------------------
 /* CITIES  /*
@@ -350,8 +355,8 @@ a:visited {
     transition: border-bottom 0.2s, color 0.2s;
 }
 
-a:hover,
-a:active {
+.city-features a:hover,
+.city-features a:active {
     color: #555;
     border-bottom: 1px solid transparent;
 }
