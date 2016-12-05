@@ -67,8 +67,9 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
     /* viewport is 100% van het scherm */
+    height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -260,15 +261,48 @@ header {
 /* TESTIMONIALS  /*
 /*---------------------------------------------------------------------------------*/
 
-.testimonials {
+.section-testimonials {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
+    color: #fff;
+    background-attachment: fixed;
 }
 
-.testimonials h2 {
-    color: #fff;
+blockquote:before {
+    /* om de quotes op een nieuwe lijn te krijgen moet deze als block gezet worden; dan wordt een force line break gedaan */
+    display: block;
+    content: "\201C";
+    font-size: 500%;
+    /* om precies te kunnen positioneren moet dit een absolute positie krijgen, met top en left, let op parent moet dan relative position hebben */
+    position: absolute;
+    top: 3px;
+    left: 7px;
+}
+
+blockquote {
+    /* om de quotes te positioneren moeten het parent element relative zijn, dus de blockquote is de parent */
+    position: relative;
+    margin-bottom: 20px;
+    padding: 5%;
+    font-style: italic;
+    line-height: 145%;
+    margin-top: 40px;
+}
+
+cite {
+    /* secrets to align text and icons */
+    font-size: 90%;
+    margin-top: 30px;
+    display: block;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50px;
+    vertical-align: middle;
+    margin-right: 15px;
 }
 
 
