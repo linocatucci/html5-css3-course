@@ -319,6 +319,7 @@ cite img {
     border-radius: 5px;
     width: 90%;
     margin-left: 5%;
+    box-shadow: 0px 3px 3px #e3e3e3;
 }
 
 .plan-box div {
@@ -326,12 +327,41 @@ cite img {
     border-bottom: 1px solid #f4f4f4;
 }
 
-.plan-price {
-    font-size: 300%;
-    margin-bottom: 10px;
+.plan-box div:last-child {
+    text-align: center;
+    border: 0px;
 }
 
-.plan-price-meal {}
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-price {
+    font-size: 300%;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: #e67e22;
+}
+
+.plan-box span {
+    /* deze fontsize is een child van de parent namelijk .plan-price */
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
 
 
 /*
