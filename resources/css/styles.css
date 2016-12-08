@@ -405,7 +405,6 @@ h2 {
     word-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
-    letter-spacing: 1px;
 }
 
 h3 {
@@ -414,6 +413,7 @@ h3 {
 }
 
 h2:after {
+    /* whole width and force line breaks */
     display: block;
     height: 2px;
     background: #e67e22;
