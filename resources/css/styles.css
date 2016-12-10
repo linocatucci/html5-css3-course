@@ -237,6 +237,12 @@ header {
     margin-bottom: 5px;
 }
 
+.city-features a:hover,
+.city-features a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
 .icon-small {
     display: inline-block;
     width: 30px;
@@ -370,6 +376,7 @@ cite img {
 
 .contact-form {
     width: 60%;
+    /* om het formulier in het midden te hebben van de pagina wordt auto gebruikt (links en rechtes) */
     margin: 0 auto;
 }
 
@@ -391,8 +398,92 @@ input[type=checkbox] {
     margin: 10px 5px 10px 0px;
 }
 
+
+/* nieuwe psuedo class, focus is het highlighten van de input velden, met outline: none is de rand weg */
+
 *:focus {
     outline: none;
+}
+
+
+/*---------------------------------------------------------------------------------
+/* section Footer  /*
+/*---------------------------------------------------------------------------------*/
+
+footer {
+    background-color: #2e2e2e;
+    padding: 20px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: none;
+    color: #888;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+    transition: color 0.3s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #55acee;
+}
+
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-social-instagram:hover {
+    color: #125688;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
 }
 
 
@@ -493,12 +584,6 @@ a:visited {
     padding-bottom: 2px;
     border-bottom: 1px solid #e67e22;
     transition: border-bottom 0.2s, color 0.2s;
-}
-
-.city-features a:hover,
-.city-features a:active {
-    color: #555;
-    border-bottom: 1px solid transparent;
 }
 
 
