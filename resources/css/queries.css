@@ -1,23 +1,53 @@
-/* Big tablets to 1200px (widths smaller than the 1140px row)*/
-
-@media only screen and (max-width: 1200px) {
-    .hero-text-box {
-        width: 100%;
-        padding: 0 2%;
-    }
-}
-
-
-/* small tablets and big tablets: from 768 to 1023px */
-
-@media only screen and (max-width: 1023px) {}
-
-
-/* small phones and small tablets: from 481 to 767px */
-
-@media only screen and (max-width: 767px) {}
-
-
-/* small phones: from 0 to 480px */
-
-@media only screen and (max-width: 480px) {}
+        /* Big tablets to 1200px (widths smaller than the 1140px row)*/
+        
+        @media only screen and (max-width: 1200px) {
+            .hero-text-box {
+                width: 100%;
+                padding: 0 2%;
+            }
+            .row {
+                padding: 0 2%;
+            }
+        }
+        /* small tablets and big tablets: from 768 to 1023px */
+        
+        @media only screen and (max-width: 1023px) {
+            body {
+                font-size: 18px;
+            }
+            section {
+                padding: 60px 0;
+            }
+            .long-copy {
+                width: 80%;
+                margin: 10%;
+                /* marging left and right of 15% = 30% total + 70% width makes 100% */
+            }
+            .steps-box {
+                margin-top: 5px;
+            }
+            .steps-box:last-child {
+                margin-top: 50px;
+            }
+            .works-step {
+                margin-bottom: 30px;
+            }
+            .works-step:last-of-type {
+                margin-bottom: 60px;
+            }
+            .app-screen {
+                width: 50%;
+            }
+            .icon-small {
+                width: 17px;
+            }
+            .city-features {
+                font-size: 90%;
+            }
+        }
+        /* small phones and small tablets: from 481 to 767px */
+        
+        @media only screen and (max-width: 767px) {}
+        /* small phones: from 0 to 480px */
+        
+        @media only screen and (max-width: 480px) {}
