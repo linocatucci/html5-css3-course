@@ -10,6 +10,7 @@
             padding: 0 2%;
         }
     }
+
     /* small tablets and big tablets: from 768 to 1023px */
     
     @media only screen and (max-width: 1023px) {
@@ -74,11 +75,11 @@
             width: 100%;
             margin: 0 0 4% 0;
         }
-        /*
+
  .main-nav {
      display: none;
  }
- */
+ 
         .mobile-nav-icon {
             display: inline-block;
         }
@@ -99,6 +100,7 @@
         }
         .sticky .main-nav {
             margin-top: 10px;
+            float: left;
         }
         .sticky .main-nav li a:link,
         .sticky .main-nav li a:visited {
