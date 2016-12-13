@@ -17,6 +17,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html,
 body {
     background-color: #fff;
@@ -28,9 +29,11 @@ body {
     /* smaller screens, the overflow will be hidden */
     overflow-x: hidden;
 }
+
 .clearfix {
     zoom: 1;
 }
+
 .clearfix:after {
     content: '.';
     clear: both;
@@ -38,6 +41,7 @@ body {
     height: 0;
     visibility: hidden;
 }
+
 
 /*---------------------------------------------------------------------------------
 
@@ -48,26 +52,30 @@ reusable components
     max-width: 1140px;
     margin: 0 auto;
 }
+
 section {
     padding: 70px 0;
 }
+
 .box {
     padding: 1%;
 }
+
 
 /*---------------------------------------------------------------------------------
 /* HEADER /* first setup of a responsive project
 /*---------------------------------------------------------------------------------*/
 
 header {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg);
     background-size: cover;
     background-position: center;
     /* viewport is 100% van het scherm */
     height: 100vh;
     background-attachment: fixed;
 }
+
 .hero-text-box {
     position: absolute;
     width: 1140px;
@@ -77,12 +85,14 @@ header {
     transform: translate(-50%, -50%);
     /* hierdoor wordt 50% van de height en de width naar links en naar boven verplaatst*/
 }
+
 .logo {
     height: 100px;
     width: auto;
     float: left;
     margin-top: 20px;
 }
+
 
 /* initial the logo black does not show */
 
@@ -95,6 +105,7 @@ header {
     margin-bottom: 5px;
 }
 
+
 /* main navi */
 
 .main-nav {
@@ -102,11 +113,13 @@ header {
     list-style: none;
     margin-top: 50px;
 }
+
 .main-nav li {
     display: inline-block;
     /* to get them side by side and with margin */
     margin-left: 40px;
 }
+
 .main-nav li a:link,
 .main-nav li a:visited {
     padding: 8px 0;
@@ -119,24 +132,28 @@ header {
     -webkit-transition: border-bottom 0.3s, border 0.3s, color 0.3s;
     transition: border-bottom 0.3s, border 0.3s, color 0.3s;
 }
+
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: solid 2px #e67e22;
 }
+
 
 /* mobile navigation menu */
 
 .mobile-nav-icon {
     float: right;
     margin-top: 30px;
-    cursor: pointer; /* to create a hand as a pointer in the html page */
+    cursor: pointer;
+    /* to create a hand as a pointer in the html page */
     display: none;
 }
 
 .mobile-nav-icon i {
-	font-size: 200%;
+    font-size: 200%;
     color: #fff;
 }
+
 
 /* sticky navigation menu */
 
@@ -151,15 +168,18 @@ header {
     z-index: 9999;
     transition: 0.3s;
 }
+
 .sticky .main-nav {
     float: right;
     margin-top: 20px;
 }
+
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
     padding: 5px 0;
     color: #555;
 }
+
 
 /* if the white logo is inside the sticky nav, don't display it */
 
@@ -167,11 +187,13 @@ header {
     display: none;
 }
 
+
 /* if the logo black is inside the sticky nav, show it as a block */
 
 .sticky .logo-black {
     display: block;
 }
+
 
 /*---------------------------------------------------------------------------------
 /* meals showcase  /*
@@ -180,16 +202,19 @@ header {
 .section-meals {
     padding: 0px;
 }
+
 .meals-showcase {
     list-style: none;
     width: 100%;
 }
+
 .meals-showcase li {
     display: block;
     float: left;
     /* 4 elementen met 25% wordt 100%  */
     width: 25%;
 }
+
 .meal-photo {
     /* 100% breedte van zijn parent en dat is de li van meals-showcase */
     width: 100%;
@@ -200,6 +225,7 @@ header {
     /* black container */
     background: #000;
 }
+
 .meal-photo img {
     opacity: 0.7;
     width: 100%;
@@ -211,6 +237,7 @@ header {
     transition: transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
+
 .meal-photo img:hover {
     /* scale back/ zoom out naar 100% */
     -webkit-transform: scale(1.03);
@@ -219,6 +246,7 @@ header {
     opacity: 1;
 }
 
+
 /*---------------------------------------------------------------------------------
 /* HOW IT WORKS  /*
 /*---------------------------------------------------------------------------------*/
@@ -226,24 +254,30 @@ header {
 .section-steps {
     background-color: #ededed;
 }
+
 .steps-box:first-child {
     text-align: right;
     padding-right: 3%;
     margin-top: 40px;
 }
+
 .steps-box:last-child {
     padding-left: 3%;
     margin-top: 70px;
 }
+
 .app-screen {
     width: 40%;
 }
+
 .works-step {
     margin-bottom: 50px;
 }
+
 .works-step:last-of-type {
     margin-bottom: 100px;
 }
+
 .works-step div {
     color: #e67e22;
     border: 2px solid #e67e22;
@@ -258,15 +292,18 @@ header {
     font-size: 150%;
     margin-right: 25px;
 }
+
 .btn-app img {
     height: 50px;
     width: auto;
     margin-right: 10px;
 }
+
 .btn-app:link,
 .bnt-app:visited {
     border: 0;
 }
+
 
 /*---------------------------------------------------------------------------------
 /* CITIES  /*
@@ -277,14 +314,17 @@ header {
     height: auto;
     margin-bottom: 15px;
 }
+
 .city-features {
     margin-bottom: 5px;
 }
+
 .city-features a:hover,
 .city-features a:active {
     color: #555;
     border-bottom: 1px solid transparent;
 }
+
 .icon-small {
     display: inline-block;
     width: 30px;
@@ -297,25 +337,28 @@ header {
     vertical-align: middle;
     margin-top: -5px;
 }
+
 .city-features a:link,
 .city-features a:visited {
     text-decoration: none;
     color: #e67e22;
 }
 
+
 /*---------------------------------------------------------------------------------
 /* TESTIMONIALS  /*
 /*---------------------------------------------------------------------------------*/
 
 .section-testimonials {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers-min.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
     color: #fff;
     background-attachment: fixed;
 }
+
 blockquote:before {
     /* om de quotes op een nieuwe lijn te krijgen moet deze als block gezet worden; dan wordt een force line break gedaan */
     display: block;
@@ -326,6 +369,7 @@ blockquote:before {
     top: 3px;
     left: 7px;
 }
+
 blockquote {
     /* om de quotes te positioneren moeten het parent element relative zijn, dus de blockquote is de parent */
     position: relative;
@@ -335,18 +379,21 @@ blockquote {
     line-height: 145%;
     margin-top: 40px;
 }
+
 cite {
     /* secrets to align text and icons */
     font-size: 90%;
     margin-top: 30px;
     display: block;
 }
+
 cite img {
     height: 50px;
     border-radius: 50px;
     vertical-align: middle;
     margin-right: 15px;
 }
+
 
 /*---------------------------------------------------------------------------------
 /* SIGN UP  /*
@@ -355,6 +402,7 @@ cite img {
 .section-plans {
     background-color: #ededed;
 }
+
 .plan-box {
     background-color: #fff;
     border-radius: 5px;
@@ -362,39 +410,48 @@ cite img {
     margin-left: 5%;
     box-shadow: 0px 3px 3px #e3e3e3;
 }
+
 .plan-box div {
     padding: 15px;
     border-bottom: 1px solid #f4f4f4;
 }
+
 .plan-box div:last-child {
     text-align: center;
     border: 0px;
 }
+
 .plan-box div:first-child {
     background-color: #fcfcfc;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+
 .plan-price {
     font-size: 300%;
     font-weight: 100;
     margin-bottom: 10px;
     color: #e67e22;
 }
+
 .plan-box span {
     /* deze fontsize is een child van de parent namelijk .plan-price */
     font-size: 30%;
     font-weight: 300;
 }
+
 .plan-price-meal {
     font-size: 80%;
 }
+
 .plan-box ul {
     list-style: none;
 }
+
 .plan-box ul li {
     padding: 5px 0;
 }
+
 
 /*---------------------------------------------------------------------------------
 /* section Contact Form  /*
@@ -405,6 +462,7 @@ cite img {
     /* om het formulier in het midden te hebben van de pagina wordt auto gebruikt (links en rechtes) */
     margin: 0 auto;
 }
+
 input[type=text],
 input[type=email],
 select,
@@ -414,18 +472,22 @@ textarea {
     border-radius: 3px;
     border: 1px solid #ccc;
 }
+
 textarea {
     height: 100px;
 }
+
 input[type=checkbox] {
     margin: 10px 5px 10px 0px;
 }
+
 
 /* nieuwe psuedo class, focus is het highlighten van de input velden, met outline: none is de rand weg */
 
 *:focus {
     outline: none;
 }
+
 
 /*---------------------------------------------------------------------------------
 /* section Footer  /*
@@ -436,23 +498,28 @@ footer {
     padding: 20px;
     font-size: 80%;
 }
+
 .footer-nav {
     list-style: none;
     float: left;
 }
+
 .social-links {
     list-style: none;
     float: right;
 }
+
 .footer-nav li,
 .social-links li {
     display: inline-block;
     margin-right: 15px;
 }
+
 .footer-nav li:last-child,
 .social-links li:last-child {
     margin-right: 0px;
 }
+
 .footer-nav li a:link,
 .footer-nav li a:visited,
 .social-links li a:link,
@@ -461,16 +528,19 @@ footer {
     border: none;
     color: #888;
 }
+
 .footer-nav li a:hover,
 .footer-nav li a:active {
     color: #ddd;
     -webkit-transition: color 0.3s;
     transition: color 0.3s;
 }
+
 .social-links li a:link,
 .social-links li a:visited {
     font-size: 160%;
 }
+
 .ion-social-facebook,
 .ion-social-twitter,
 .ion-social-googleplus,
@@ -478,23 +548,29 @@ footer {
     -webkit-transition: color 0.3s;
     transition: color 0.3s;
 }
+
 .ion-social-facebook:hover {
     color: #3b5998;
 }
+
 .ion-social-twitter:hover {
     color: #55acee;
 }
+
 .ion-social-googleplus:hover {
     color: #dd4b39;
 }
+
 .ion-social-instagram:hover {
     color: #125688;
 }
+
 footer p {
     color: #888;
     text-align: center;
     margin-top: 20px;
 }
+
 
 /*
 
@@ -511,6 +587,7 @@ h1 {margin-top: 0;}
     margin-bottom: 30px;
 }
 
+
 /* HEADINGS */
 
 h1,
@@ -519,6 +596,7 @@ h3 {
     font-weight: 300;
     text-transform: uppercase;
 }
+
 h1 {
     margin-top: 0;
     margin-bottom: 20px;
@@ -527,6 +605,7 @@ h1 {
     font-size: 240%;
     letter-spacing: 1px;
 }
+
 h2 {
     /* dit is 2x de fontsize van de global fontsize in html block declaratie 200% = 40px */
     font-size: 180%;
@@ -535,10 +614,12 @@ h2 {
     text-align: center;
     margin-bottom: 30px;
 }
+
 h3 {
     font-size: 110%;
     margin-bottom: 15px;
 }
+
 h2:after {
     /* whole width and force line breaks */
     display: block;
@@ -551,6 +632,7 @@ h2:after {
     margin-top: 30px;
 }
 
+
 /* ---------- PARAGRAPHS------------ */
 
 .long-copy {
@@ -559,10 +641,12 @@ h2:after {
     margin: 0 15%;
     /* marging left and right of 15% = 30% total + 70% width makes 100% */
 }
+
 .box p {
     font-size: 90%;
     line-height: 145%;
 }
+
 
 /* ---------- ICONS------------ */
 
@@ -575,6 +659,7 @@ h2:after {
     text-align: center;
 }
 
+
 /* ---------- GENERIC LINKS------------ */
 
 a:link,
@@ -586,6 +671,7 @@ a:visited {
     -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
+
 
 /* ---------- BUTTONS------------ */
 
@@ -600,6 +686,7 @@ input[type=submit] {
     -webkit-transition: background-color 0.3s, border 0.3s, color 0.3s;
     transition: background-color 0.3s, border 0.3s, color 0.3s;
 }
+
 .btn-full:link,
 .btn-full:visited,
 input[type=submit] {
@@ -608,26 +695,31 @@ input[type=submit] {
     color: #fff;
     margin-right: 15px;
 }
+
 .btn-ghost:link,
 .btn-ghost:visited {
     border: solid 1px #e67e22;
     color: #e67e22;
 }
+
 .btn:hover,
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active {
     background-color: #cf6d17;
 }
+
 .btn-full:hover,
 .btn-full:active {
     background-color: #cf6d17;
 }
+
 .btn-ghost:hover,
 .btn-ghost:active {
     border: solid 1px #cf6d17;
     color: #fff;
 }
+
 
 /*---------------------------------------------------------------------------------
 /* Animations  /*
@@ -643,10 +735,12 @@ input[type=submit]:active {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
 }
+
 .js--wp4 {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
 }
+
 .js--wp1.animated,
 .js--wp2.animated,
 .js--wp3.animated {
