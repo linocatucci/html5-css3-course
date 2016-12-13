@@ -614,3 +614,28 @@ input[type=submit]:active {
     border: solid 1px #cf6d17;
     color: #fff;
 }
+
+/*---------------------------------------------------------------------------------
+/* Animations  /*
+/*---------------------------------------------------------------------------------*/
+
+
+/* start with the row as invisible, the animation will show the element (row) */
+
+.js--wp1,
+.js--wp2,
+.js--wp3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp4 {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+.js--wp1.animated,
+.js--wp2.animated,
+.js--wp3.animated {
+    opacity: 1;
+}

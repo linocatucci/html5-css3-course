@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
-
-    $('.js--section-features').waypoint(function(direction) {
+    /* Sticky navigation */
+    $('.js--section-features').waypoint(function (direction) {
         if (direction == "down") {
             $('nav').addClass('sticky');
 
@@ -13,12 +13,70 @@ $(document).ready(function () {
         offset: '60px;'
     });
 
-    /*
-    var waypoints = $('#handler-first').waypoint(function(direction) {
-      notify(this.element.id + ' hit 25% from top of window') 
+    /* scroll on buttons */
+    /* select the class .js--scroll-to-plan when clicked on it, the next part */
+    /* will happen -> an animation which scrolls to the top of the js--section-plans */
+    /* with an offset op 1 second */
+    $('.js--scroll-to-plan').click(function () {
+        $('html, body').animate({
+            scrollTop: $('.js--section-plans').offset().top
+        }, 1000);
+
+    });
+
+    /* scroll on buttons */
+    /* select the class .js--scroll-to-start when clicked on it, the next part */
+    /* will happen -> an animation which scrolls to the top of the js--section-features */
+    /* with an offset/animation van / op 1 second */
+    $('.js--scroll-to-start').click(function () {
+        $('html, body').animate({
+            scrollTop: $('.section-features').offset().top
+        }, 1000);
+
+    });
+
+
+    /* navication scroll */
+    $(function () {
+        $('a[href*="#"]:not([href="#"])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+
+    });
+
+    /* animations on scroll */
+    $('.js--wp1').waypoint(function (direction) {
+        $('.js--wp1').addClass('animated fadeIn');
     }, {
-      offset: '25%'
-    })
-    */
+        offset: '50%'
+
+    });
+        $('.js--wp2').waypoint(function (direction) {
+        $('.js--wp2').addClass('animated fadeInUp');
+    }, {
+        offset: '50%'
+
+    });
+        $('.js--wp3').waypoint(function (direction) {
+        $('.js--wp3').addClass('animated fadeIn');
+    }, {
+        offset: '50%'
+
+    });
+        $('.js--wp4').waypoint(function (direction) {
+        $('.js--wp4').addClass('animated pulse');
+    }, {
+        offset: '50%'
+
+    });
 
 });
