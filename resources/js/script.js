@@ -94,4 +94,22 @@ $(document).ready(function () {
             icon.removeClass('ion-close-round');
         }
     });
+    /* Gmaps.js script for Google maps */
+    var map = new GMaps({
+        div: '.map',
+        lat: 49.2578263,
+        lng: -123.1,
+        zoom: 12
+    });
+
+
+    map.addMarker({
+        lat: 49.2900855,
+        lng: -123.1397417,
+        title: 'Vancouver',
+        infoWindow: {
+            content: '<p>Our Location</p>'
+        }
+    });
+
 });
